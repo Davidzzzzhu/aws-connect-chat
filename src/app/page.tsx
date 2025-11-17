@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function HomePage() {
   useEffect(() => {
@@ -46,7 +46,7 @@ export default function HomePage() {
         transcript: {
           hideDisplayNames: false,
           eventNames: {
-            customer: "Jianfei Chen",
+            customer: "Test Customer",
             agent: "OHL Ops",
             bot:"Agent",
             system:"Agent",
@@ -110,8 +110,8 @@ export default function HomePage() {
       })
     `;
 
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
+    const script = document.createElement("script");
+    script.type = "text/javascript";
     script.text = scriptContent;
     document.body.appendChild(script);
 
@@ -123,4 +123,3 @@ export default function HomePage() {
 
   return null;
 }
-
